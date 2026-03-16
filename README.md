@@ -1,28 +1,28 @@
-# Singple Wedding Invitation Landing Page 
+# 简洁婚礼请柬落地页 
 
 
-# Section/Feature
-- Main Info
-- Countdown to D-Day
-- Time and Place Info
-- Add to Calendar Button (Google Calendar)
-- Map Direction Button (Google Map)
-- Send Message Button (Whatssapp API)
+# 模块 / 功能
+- 主要信息
+- 婚礼倒计时
+- 时间与地点信息
+- 添加到日历按钮 (Google Calendar)
+- 地图导航按钮 (Google Map)
+- 发送消息按钮 (WhatsApp API)
 
-# Stack
+# 技术栈
 - Netlify (https://netlify.com)
 
 - Bulma CSS (https://bulma.io)
 
-# Info
-- Preview live at: [https://simple-wedding-invitation.dae.ng/] (https://simple-wedding-invitation.dae.ng/)
-- Or check demo at: [https://simple-wedding-invitation.netlify.app/](https://simple-wedding-invitation.netlify.app/)
+# 其他信息
+- 在线预览： [https://simple-wedding-invitation.dae.ng/] (https://simple-wedding-invitation.dae.ng/)
+- 演示页面： [https://simple-wedding-invitation.netlify.app/](https://simple-wedding-invitation.netlify.app/)
 
-# Fonts
+# 字体
 - Rouge Script (Google Font)
 - Raleway (Google Font)
 
 
-# Credits
-- Floral vector created by BiZkettE1 - www.freepik.com (https://www.freepik.com/free-photos-vectors/background)
-- Photos from unsplash.com (https://www.unsplash.com)
+# 鸣谢
+- Floral vector 由 BiZkettE1 创作 - www.freepik.com (https://www.freepik.com/free-photos-vectors/background)
+- 图片来源：unsplash.com (https://www.unsplash.com)
