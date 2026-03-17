@@ -39,10 +39,14 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
+  var toTopButton = document.getElementById("toTop");
+  if (!toTopButton) {
+    return;
+  }
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("toTop").style.display = "block";
+    toTopButton.style.display = "block";
   } else {
-    document.getElementById("toTop").style.display = "none";
+    toTopButton.style.display = "none";
   }
 }
 
@@ -51,7 +55,7 @@ $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
 });
-$(window).load(function() {
+$(window).on('load', function() {
   var Body = $("body");
   Body.addClass("preloader-site");
 });

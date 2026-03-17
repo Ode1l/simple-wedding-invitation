@@ -4,7 +4,7 @@ ul#hitungmundur {
 	padding: 0;
 	display: block;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
 }
 ul#hitungmundur li {
 	display: inline-block;
