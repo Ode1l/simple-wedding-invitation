@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&family=Montserrat:wght@400;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=Rouge+Script&family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&family=Montserrat:wght@400;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=Rouge+Script&family=Kaiti+SC&family=Zhi+Mang+Xing&display=swap');
 
 .tizi-sans {
   font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
@@ -378,7 +378,6 @@ vertical-align: middle;
   bottom: 0;
   width: 100vw;
   padding: 15px 15px;
-  line-height: 25px;
   text-align: center;
   vertical-align: middle;
   background: #c28285;
@@ -396,14 +395,7 @@ vertical-align: middle;
 
 
 .main-content .no-padding-top {
-  padding-top: 0px;
-}
-
-.footer img{
-  margin: 10px 0px 10px 10px;
-  display: inline-block;
-  max-height: 24px;
-  vertical-align: middle;
+  padding-top: 0;
 }
 
 .footer a .nav-item {
