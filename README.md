@@ -20,8 +20,11 @@
 
 # 字体
 - Rouge Script (Google Font)
-- Raleway (Google Font)
+- Ma Shan Zheng (Google Font)
+- Long Cang (Google Font)
+- Zhi Mang Xing (Google Font)
 - Noto Sans SC / Noto Serif SC (Google Font) – 适配中文排版
+- Montserrat (Google Font) – 数字与时间信息
 
 
 # 鸣谢
