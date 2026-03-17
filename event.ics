@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ode1l//simple-wedding-invitation//CN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:li-muyang-fullmoon-20260425@example.com
+DTSTAMP:20240429T000000Z
+DTSTART;TZID=Asia/Shanghai:20260425T113000
+DTEND;TZID=Asia/Shanghai:20260425T140000
+SUMMARY:李沐阳（小鲤鱼）满月午宴
+LOCATION:君来洲际酒店吴粤1号 二楼观鱼厅, 无锡市梁溪区永和路6号
+DESCRIPTION:李嘉恒与杨雨婷诚邀您参加李沐阳（小鲤鱼）于 2026 年 4 月 25 日的满月午宴。
+END:VEVENT
+END:VCALENDAR
