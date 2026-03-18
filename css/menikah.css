@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.cn/css2?family=Montserrat&family=Kaiti+SC&family=Long+Cang&family=Ma+Shan+Zheng&display=swap');
+@font-face {
+  font-family: 'Ma Shan Zheng';
+  src: url('../fonts/MaShanZheng-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Long Cang';
+  src: url('../fonts/LongCang-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 .tizi-sans {
   font-family: Noto Sans SC, serif;
@@ -32,7 +44,7 @@
 }
 
 .tizi-sign {
-  font-family: 'Kaiti SC', serif;
+  font-family: 'KaiTi', serif;
   letter-spacing: 0.02em;
   font-size: 1.15em;   /* 视需要调到 1.1 或 1.15 */
 }
