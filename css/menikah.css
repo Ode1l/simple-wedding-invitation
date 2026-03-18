@@ -1,44 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&family=Montserrat:wght@400;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=Rouge+Script&family=Kaiti+SC&family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&amily=Noto+Sans+SC:wght@400;500;600;700');
 
 .tizi-sans {
-  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
+  font-family: Noto Sans SC, serif;
 }
 
 .tizi-sans-500 {
-  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 500;
 }
 
 .tizi-sans-600 {
-  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 600;
 }
 
 .tizi-serif {
-  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', 'Microsoft YaHei', serif;
+  font-family: 'Noto Serif SC', serif;
 }
 
 .tizi-serif-600 {
-  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', 'Microsoft YaHei', serif;
+  font-family: 'Noto Serif SC', serif;
   font-weight: 600;
 }
 
 .tizi-script {
-  font-family: 'Ma Shan Zheng', 'Noto Serif SC', 'Noto Sans SC', 'PingFang SC', serif;
+  font-family: 'Ma Shan Zheng', serif;
 }
 
 .tizi-script-alt {
-  font-family: 'Long Cang', 'Ma Shan Zheng', 'Noto Serif SC', 'Noto Sans SC', 'PingFang SC', serif;
+  font-family: 'Long Cang', serif;
 }
 
 .tizi-sign {
-  font-family: 'Kaiti SC', 'BiauKai', 'STKaiti', 'Zhi Mang Xing', 'Noto Serif SC', serif;
+  font-family: 'Kaiti SC', serif;
   letter-spacing: 0.02em;
   font-size: 1.15em;   /* 视需要调到 1.1 或 1.15 */
 }
 
 .tizi-num {
-  font-family: 'Montserrat', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
 }
 .has-vertically-aligned-content {
@@ -52,7 +52,7 @@
 }
 
 body {
-  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
   width: 100%;
   min-height: 100%;
 }
@@ -80,7 +80,7 @@ body {
 
 
 .hero {
-  background-image: url(https://picsum.photos/id/25/1920/1080);
+  background-image: url("/image/bgp.jpg");
   background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
   background-attachment: fixed;
   background-size: cover;
