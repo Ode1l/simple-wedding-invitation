@@ -11,6 +11,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'XingKai';
+  src: url('../fonts/XingKai.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 .tizi-sans {
   font-family: Noto Sans SC, serif;
@@ -44,7 +50,7 @@
 }
 
 .tizi-sign {
-  font-family: 'KaiTi', serif;
+  font-family: 'XingKai', serif;
   letter-spacing: 0.02em;
   font-size: 1.15em;   /* 视需要调到 1.1 或 1.15 */
 }
