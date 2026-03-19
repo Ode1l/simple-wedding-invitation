@@ -40,6 +40,7 @@
         <img alt="花朵图案" src="image/favicon.png"/>
     </div>
 </div>
+<button class="music-toggle" id="music-toggle" aria-label="播放/暂停音乐">♪</button>
 <!-- End Preloader-->
 <!-- Begin Header -->
 <div class="header-wrapper" id="home">
@@ -80,7 +81,8 @@
         <!-- End Mobile Nav -->
         <!-- Begin Hero Content-->
         <div class="hero-body">
-            <div class="container has-text-centered">
+          <audio id="bg-music" src="music/music.mp3" loop autoplay></audio>
+          <div class="container has-text-centered">
                 <h1 class="subtitle tizi-sans-600">满月宴邀请</h1>
                 <h2 class="title tizi-script">李沐阳<br>小鲤鱼</h2>
                 <h4 class="subtitle tempatwaktu tizi-sans">
@@ -448,9 +450,28 @@
 
         var lightbox = document.getElementById('photo-lightbox');
         if (lightbox) {
-            lightbox.addEventListener('click', hidePhoto);
+          lightbox.addEventListener('click', hidePhoto);
         }
-    });
-</script>
-</body>
+
+        var musicBtn = document.getElementById('music-toggle');
+        var musicAudio = document.getElementById('bg-music');
+        if (musicBtn && musicAudio) {
+          musicAudio.play().then(function () {
+            musicBtn.classList.add('is-playing');
+          }).catch(function () {
+            // autoplay blocked; wait for user interaction
+          });
+          musicBtn.addEventListener('click', function () {
+            if (musicAudio.paused) {
+              musicAudio.play();
+              musicBtn.classList.add('is-playing');
+            } else {
+              musicAudio.pause();
+              musicBtn.classList.remove('is-playing');
+            }
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
