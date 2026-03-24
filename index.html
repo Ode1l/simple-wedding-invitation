@@ -214,22 +214,22 @@
                     </p>
 
                 </div>
-                <div class="column is-4 has-vertically-aligned-content">
+<!--                <div class="column is-4 has-vertically-aligned-content">-->
 
-                    <p class="waktu is-larger has-text-centered tizi-sans">
-                        入席时间：
-                        <br>
-                        <strong class="tizi-num">11:30</strong>
-                    </p>
+<!--                    <p class="waktu is-larger has-text-centered tizi-sans">-->
+<!--                        入席时间：-->
+<!--                        <br>-->
+<!--                        <strong class="tizi-num">11:30</strong>-->
+<!--                    </p>-->
 
-                </div>
+<!--                </div>-->
 
                 <div class="column is-4 has-vertically-aligned-content">
 
                     <h1 class="waktu is-larger has-text-centered tizi-sans-600">
                         午宴开席：
                         <br>
-                        <strong class="tizi-num">12:00</strong>
+                        <strong class="tizi-num">11:30</strong>
                     </h1>
 
 
@@ -474,6 +474,21 @@
             });
         }
     });
+    var audio = document.getElementById('bg-music');
+    $("#btn").bind("music-toggle", function bf() {
+        if(audio !== null) {
+            if(audio.paused) {
+                audio.play(); //audio.play();// 这个就是播放
+                $("#btn").addClass("active")
+            } else {
+                audio.pause(); // 这个就是暂停
+                $("#btn").removeClass("active")
+            }
+        }
+    })
+    $("html").one('touchstart',function(){
+        audio.play();
+    })
 </script>
 </body>
 </html>
