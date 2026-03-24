@@ -473,22 +473,8 @@
                 }
             });
         }
+        (()=>musicBtn.click())();
     });
-    var audio = document.getElementById('bg-music');
-    $("#music-toggle").bind("touchstart", function bf() {
-        if(audio !== null) {
-            if(audio.paused) {
-                audio.play(); //audio.play();// 这个就是播放
-                $("#music-toggle").addClass("is-playing")
-            } else {
-                audio.pause(); // 这个就是暂停
-                $("#music-toggle").removeClass("is-playing")
-            }
-        }
-    })
-    $("html").one('touchstart',function(){
-        audio.play();
-    })
 </script>
 </body>
 </html>
