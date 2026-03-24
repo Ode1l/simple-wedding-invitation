@@ -458,10 +458,9 @@
         var musicBtn = document.getElementById('music-toggle');
         var musicAudio = document.getElementById('bg-music');
         if (musicBtn && musicAudio) {
-            musicAudio.play().then(function () {
+            musicAudio.addEventListener('progress', function() {
+                musicAudio.play();
                 musicBtn.classList.add('is-playing');
-            }).catch(function () {
-                // autoplay blocked; wait for user interaction
             });
             musicBtn.addEventListener('click', function () {
                 if (musicAudio.paused) {
