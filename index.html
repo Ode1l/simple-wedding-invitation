@@ -40,7 +40,7 @@
         <img alt="花朵图案" src="image/favicon.png"/>
     </div>
 </div>
-<button class="music-toggle" id="music-toggle" aria-label="播放/暂停音乐">♪</button>
+<button aria-label="播放/暂停音乐" class="music-toggle" id="music-toggle">♪</button>
 <!-- End Preloader-->
 <!-- Begin Header -->
 <div class="header-wrapper" id="home">
@@ -81,8 +81,8 @@
         <!-- End Mobile Nav -->
         <!-- Begin Hero Content-->
         <div class="hero-body">
-          <audio id="bg-music" src="music/music.mp3" loop autoplay></audio>
-          <div class="container has-text-centered">
+            <audio autoplay id="bg-music" loop src="music/music.mp3"></audio>
+            <div class="container has-text-centered">
                 <h1 class="subtitle tizi-sans-600">满月宴邀请</h1>
                 <h2 class="title tizi-script">李沐阳<br>小鲤鱼</h2>
                 <h4 class="subtitle tempatwaktu tizi-sans">
@@ -93,40 +93,40 @@
             <!-- Start Countdown -->
             <div>
                 <ul id="hitungmundur">
-                    <li><span class="days">00</span>
-                        <p class="days_text">天</p></li>
+                    <li><span class="days">04</span>
+                        <p class="days_text">月</p></li>
+                    <li class="separator">/</li>
+                    <li><span class="hours">25</span>
+                        <p class="hours_text">日</p></li>
+                    <li class="separator">-</li>
+                    <li><span class="minutes">11</span>
+                        <p class="minutes_text">时</p></li>
                     <li class="separator">:</li>
-                    <li><span class="hours">00</span>
-                        <p class="hours_text">小时</p></li>
-                    <li class="separator">:</li>
-                    <li><span class="minutes">00</span>
-                        <p class="minutes_text">分钟</p></li>
-                    <li class="separator">:</li>
-                    <li><span class="seconds">00</span>
-                        <p class="seconds_text">秒</p></li>
+                    <li><span class="seconds">30</span>
+                        <p class="seconds_text">分</p></li>
                 </ul>
                 <div class="spasi">
                 </div>
-                <script type="text/javascript">
-                    var now = new Date();
-                    var day = now.getDate();
-                    var month = now.getMonth() + 1;
-                    var year = now.getFullYear() + 1;
+                <!--                <script type="text/javascript">-->
+                <!--                    var now = new Date();-->
+                <!--                    var day = now.getDate();-->
+                <!--                    var month = now.getMonth() + 1;-->
+                <!--                    var year = now.getFullYear() + 1;-->
 
-                    var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-                    var harih = '04/25/2026 12:00:00';
+                <!--                    var nextyear = month + '/' + day + '/' + year + ' 07:07:07';-->
+                <!--                    var harih = '04/25/2026 12:00:00';-->
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +8, // TODO Your Timezone Offset
-                day: '天',
-                days: '天'
-              }, function () {
-                alert('我们的小鲤鱼满月宴开始啦！');
-              });
-            </script>  
-          </div>
-          <!-- End Countdown -->
+                <!--              $('#hitungmundur').countdown({-->
+                <!--                date: harih, // TODO Date format: 07/27/2017 17:00:00-->
+                <!--                offset: +8, // TODO Your Timezone Offset-->
+                <!--                day: '天',-->
+                <!--                days: '天'-->
+                <!--              }, function () {-->
+                <!--                alert('我们的小鲤鱼满月宴开始啦！');-->
+                <!--              });-->
+                <!--            </script>  -->
+            </div>
+            <!-- End Countdown -->
         </div>
         <!-- End Hero Content-->
         <!-- Begin Hero Menu -->
@@ -206,9 +206,7 @@
                 <h1 class="title has-text-centered section-title tizi-sans-600">宴席时间</h1>
             </div>
             <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-                <div
-                        class="column is-4 has-vertically-aligned-content">
-
+                <div class="column is-4 has-vertically-aligned-content">
                     <p class="is-larger has-text-centered">
                     <div class="waktu tanggal-hari has-text-centered tizi-sans-600">星期六</div>
                     <div class="waktu tanggal-angka has-text-centered tizi-num">25</div>
@@ -266,12 +264,16 @@
             </div>
             <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
                 <iframe allowfullscreen
-                        frameborder="0" height="450" src="https://m.amap.com/navi/?dest=120.303736,31.55364&destName=%E5%90%9B%E6%9D%A5%E6%B4%B2%E9%99%85%E9%85%92%E5%BA%97%E5%90%B4%E7%B2%A41%E5%8F%B7&hideRouteIcon=1&key=7e55875dd80208031c76da594a70267e&jscode=18fe1b7a8f72c40e98245ed5df09bb6c" style="border:0;" width="100%"></iframe>
+                        frameborder="0" height="450"
+                        src="https://m.amap.com/navi/?dest=120.303736,31.55364&destName=%E5%90%9B%E6%9D%A5%E6%B4%B2%E9%99%85%E9%85%92%E5%BA%97%E5%90%B4%E7%B2%A41%E5%8F%B7&hideRouteIcon=1&key=7e55875dd80208031c76da594a70267e&jscode=18fe1b7a8f72c40e98245ed5df09bb6c"
+                        style="border:0;" width="100%"></iframe>
             </div>
             <div class="space40px"></div>
             <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
                 <a class="button btn-cta"
-                   data-aos="zoom-in" href="https://amap.com/search?id=B01FE0K7M4&city=320213&geoobj=115.390872%7C39.259784%7C118.133131%7C40.594982&query_type=IDQ&query=%E6%97%A0%E9%94%A1%E5%90%9B%E6%9D%A5%E6%B4%B2%E9%99%85%E9%85%92%E5%BA%97&zoom=9.3" target="_blank">
+                   data-aos="zoom-in"
+                   href="https://amap.com/search?id=B01FE0K7M4&city=320213&geoobj=115.390872%7C39.259784%7C118.133131%7C40.594982&query_type=IDQ&query=%E6%97%A0%E9%94%A1%E5%90%9B%E6%9D%A5%E6%B4%B2%E9%99%85%E9%85%92%E5%BA%97&zoom=9.3"
+                   target="_blank">
                     <i class="far fa-map"></i>
                     打开地图导航
                 </a>
@@ -450,28 +452,28 @@
 
         var lightbox = document.getElementById('photo-lightbox');
         if (lightbox) {
-          lightbox.addEventListener('click', hidePhoto);
+            lightbox.addEventListener('click', hidePhoto);
         }
 
         var musicBtn = document.getElementById('music-toggle');
         var musicAudio = document.getElementById('bg-music');
         if (musicBtn && musicAudio) {
-          musicAudio.play().then(function () {
-            musicBtn.classList.add('is-playing');
-          }).catch(function () {
-            // autoplay blocked; wait for user interaction
-          });
-          musicBtn.addEventListener('click', function () {
-            if (musicAudio.paused) {
-              musicAudio.play();
-              musicBtn.classList.add('is-playing');
-            } else {
-              musicAudio.pause();
-              musicBtn.classList.remove('is-playing');
-            }
-          });
+            musicAudio.play().then(function () {
+                musicBtn.classList.add('is-playing');
+            }).catch(function () {
+                // autoplay blocked; wait for user interaction
+            });
+            musicBtn.addEventListener('click', function () {
+                if (musicAudio.paused) {
+                    musicAudio.play();
+                    musicBtn.classList.add('is-playing');
+                } else {
+                    musicAudio.pause();
+                    musicBtn.classList.remove('is-playing');
+                }
+            });
         }
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
