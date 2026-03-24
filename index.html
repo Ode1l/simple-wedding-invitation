@@ -475,7 +475,7 @@
         }
     });
     var audio = document.getElementById('bg-music');
-    $("#btn").bind("music-toggle", function bf() {
+    $("#music-toggle").bind("touchstart", function bf() {
         if(audio !== null) {
             if(audio.paused) {
                 audio.play(); //audio.play();// 这个就是播放
