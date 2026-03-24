@@ -479,10 +479,10 @@
         if(audio !== null) {
             if(audio.paused) {
                 audio.play(); //audio.play();// 这个就是播放
-                $("#btn").addClass("active")
+                $("#music-toggle").addClass("active")
             } else {
                 audio.pause(); // 这个就是暂停
-                $("#btn").removeClass("active")
+                $("#music-toggle").removeClass("active")
             }
         }
     })
