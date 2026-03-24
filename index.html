@@ -458,8 +458,12 @@
         var musicBtn = document.getElementById('music-toggle');
         var musicAudio = document.getElementById('bg-music');
         if (musicBtn && musicAudio) {
-            musicAudio.addEventListener('progress', function() {
-                musicAudio.play();
+            musicAudio.addEventListener('loadedmetadata', function() {
+                musicAudio.play().then(function () {
+                    musicBtn.classList.add('is-playing');
+                }).catch(function () {
+                    // autoplay blocked; wait for user interaction
+                });
                 musicBtn.classList.add('is-playing');
             });
             musicBtn.addEventListener('click', function () {
